@@ -1,13 +1,47 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test-bigdata</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en" class="dark" style="color-scheme: dark;">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuestionarios Big Data</title>
+  <!-- Datos para SEO -->
+  <meta name="description" content="Cuestionarios interactivos para repasar los módulos de BDA y SBD." />
+  <meta name="theme-color" content="#09090b" />
+
+  <!-- Datos para compartir -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cuestionarios Big Data" />
+  <meta property="og:description" content="Cuestionarios interactivos para repasar los módulos de BDA y SBD." />
+  <meta property="og:image" content="/icon.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Logo Cuestionarios Big Data" />
+
+  <!-- Tarjeta de Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cuestionarios Big Data" />
+  <meta name="twitter:description" content="Cuestionarios interactivos para repasar los módulos de BDA y SBD." />
+  <meta name="twitter:image" content="/icon.png" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    html.light body {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-black">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
