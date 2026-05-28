@@ -56,6 +56,15 @@ export const QuestionCard = ({ question, index, answer, onSelectOption }) => {
           );
         })}
       </div>
+
+      {hasAnswered && !question.options[answer]?.isCorrect && question.explanation && (
+        <div className="mt-5 p-4 rounded-xl bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-400 dark:border-amber-600">
+          <p className="text-amber-800 dark:text-amber-200 text-base leading-relaxed">
+            <span className="font-bold mr-1">💡</span>
+            {renderFormattedText(question.explanation)}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
